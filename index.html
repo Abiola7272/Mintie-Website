@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mintie Website</title>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="border overflow-hidden">
+        <nav>
+            <!------------------FIRST NAV------------------>
+            <div class=" h-20 w-screen bg-yellow-100 flex justify-between item-center text-center p-6 text-xs">
+                <div class="hidden md:flex ">
+                    <div class="flex items-center">
+                        <div class="rounded-full bg-white h-8 w-8 grid place-items-center mr-2 ">
+                            <span class="material-symbols-outlined">location_on<span>
+                        </div>                       
+                        <p>STORAGE LOCATIONS</p>
+                    </div>
+
+                    <div class="flex items-center ml-4">
+                        <div class="rounded-full bg-white h-8 w-8 grid place-items-center mr-2">
+                            <span class="material-symbols-outlined">shopping_bag</span>
+                        </div>                       
+                        <p>ORDER TRACKING</p>
+                    </div>
+                </div>
+
+                <div class="w-full flex items-center justify-center md:hidden lg:flex lg:justify-center lg:w-2/4 ">
+                    <p class=" ">FREE SHIPPING FOR ALL U.S ORDERS $75</p>
+                </div>
+
+                <div class="hidden md:flex ">
+                    <div class="flex mr-6 items-center">
+                        <select class="bg-transparent">
+                            <option>USD</option>
+                            <option>GBP</option>
+                            <option>CAD</option>
+                            <option>BTC</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center">
+                        <select name="" id="" class="bg-transparent">
+                            <option>ENGLISH</option>
+                            <option>FRENCH</option>
+                            <option>SPANISH</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------SECOND NAV---------------------->
+            <div class="h-24 w-full border-solid border flex  justify-between p-8">
+                <div class="flex items-center">
+                    <button class="openSidebar border w-8 grid text-gray-400 lg:hidden ">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+
+                    <!---------SIDE BAR-------->
+                    <div class="sidebar z-50 absolute bottom-0 left-0 lg:hidden " style="height: 100vh; width: 100vw;">
+                        <div class="closeSidebar absolute right-8 top-4 ">
+                            <span class="material-symbols-outlined text-5xl text-white hover:text-red-400">close</span>
+                        </div>
+
+                        <div class="h-full w-4/5 md:h-full md:w-2/5 bg-white left-0 top-0 pt-2 ">
+                            <div class="mt-2">
+                                <a href="#" class="h-20 w-16 ml-2 block"><img src="./images/mintielogo-black.svg"></a>
+                            </div>
+
+                            <!---SIDE BAR LINKS-->
+                            <div>
+                                <!---- HOME---->
+                                <div>
+                                    <div class="h-14 w-56 md:h-14 md:w-64 flex justify-between items-center ml-4 hover:text-red-700" style="border-bottom: 1px solid rgb(185, 182, 182);">
+                                        <div><p>Home</p></div>
+                                        <button class="w-52 h-full md:w-72 md:h-full relative Btn">
+                                            <span class="material-symbols-outlined absolute right-0 top-4 showBtn">expand_more</span>
+                                            <span class="material-symbols-outlined absolute right-0 top-4 hideBtn">chevron_right</span> 
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="w-52 md:h-auto md:w-60 md:h-auto ml-8 subNavWrap">
+                                        <div class="w-full h-14 hover:text-red-700">
+                                            <a href="#">
+                                                <div class="h-full w-full flex justify-start items-center" style="border-bottom: 1px solid rgb(219, 217, 217);">
+                                                    <p>Home v1 - Main</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-full h-14 hover:text-red-700">
+                                            <a href="#">
+                                                <div class="h-full w-full flex justify-start items-center" style="border-bottom: 1px solid rgb(219, 217, 217);">
+                                                    <p>Home v2 - Minimal</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-full h-14 hover:text-red-700">
+                                            <a href="#">
+                                                <div class="h-full w-full flex justify-start items-center" style="border-bottom: 1px solid rgb(219, 217, 217);">
+                                                    <p>Home v3 - Fullscreen slider</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-full h-14 hover:text-red-700">
+                                            <a href="#">
+                                                <div class="h-full w-full flex justify-start items-center" style="border-bottom: 1px solid rgb(219, 217, 217);">
+                                                    <p>Home v4 - Modern</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-full h-14 hover:text-red-700">
+                                            <a href="#">
+                                                <div class="h-full w-full flex justify-start items-center" style="border-bottom: 1px solid rgb(219, 217, 217);">
+                                                    <p>Home v5 - Boxed</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden lg:flex items-center">
+                        <label for="search" class=" w-72 border-b relative text-base font-semibold">
+                            <input type="text" id="search" placeholder="Search for product" class="w-full outline-none mb-0" >
+                            <button><span class="material-symbols-outlined absolute bottom-6 right-1">search</span></button>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <img src="./images/mintielogo-black.svg" alt="" class="h-12 w-20 md:h-40 md:w-32">
+                </div>
+
+                <div class="flex items-center text-gray-400 md:hidden lg:flex">
+                    <div class="hidden lg:flex">
+                        <span class="material-symbols-outlined ">person</span>
+                    </div>
+                    <div class="hidden lg:flex mr-3 ml-3">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                    <div class="">
+                        <span class="material-symbols-outlined">local_mall</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-------------third nav----------->
+            <div class="h-12 w-full flex hidden lg:block lg:h-12 lg:w-full lg:flex justify-center items-center">
+                <div class="subNavWrapper w-3/5 h-8 flex justify-between items-center">
+                    <ul class=" w-full flex justify-between items-center">
+                        <li class="">
+                            <a href="#" class="flex items-center justify-center">
+                                Home
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                            <div class="sub-nav">
+                                <ul class="w-60 h-60">
+                                    <li><a href="#" class="ml-8 my-4 block">Home v1 - Main</a></li>
+                                    <li><a href="#" class="ml-8 my-4 block">Home v2 - Minimal</a></li>
+                                    <li><a href="#" class="ml-8 my-4 block">Home v3 - Fullscreen slider</a></li>
+                                    <li><a href="#" class="ml-8 my-4 block">Home v4 - Modern</a></li>
+                                    <li><a href="#" class="ml-8 my-4 block">Home v5 - Boxed</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="block h-full w-20 flex items-center justify-center ">
+                                Shop
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                            <div class="navwrapper relative">
+                                <div class="shopSubNav absolute left-0 top-8">
+                                    <h5 class="ml-4 mb-4">SHOP LAYOUTS</h5>
+                                    <ul>
+                                        <li><a href="#" class="ml-4 mb-1 block">v1 - Sidebar 3 Cols</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">v2 - Sidebar 4 Cols</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">v3 - Grid 3 Cols</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">v4 - Grid 4 Cols</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">v5 - Grid 5 Cols</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">v6 - Category</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="shopSubNav absolute right-0 top-8">
+                                    <h5 class="mb-4">PRODUCT LAYOUTS</h5>
+                                    <ul>
+                                        <li><a href="#" class="mb-1 block">v1 - Grid</a></li>
+                                        <li><a href="#" class="mb-1 block">v2 - Slider</a></li>
+                                        <li><a href="#" class="mb-1 block">v3 - Centered</a></li>
+                                        <li><a href="#" class="mb-1 block">v4 - Sticky</a></li>
+                                        <li><a href="#" class="mb-1 block">v5 - Carousel</a></li>
+                                        <li><a href="#" class="mb-1 block">v6 - Sidebar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center">
+                                Pages
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+
+                            <div class="sub-nav">
+                                <ul class="w-40 h-40">
+                                    <li><a href="#" class="ml-6 my-4 block">About v1</a></li>
+                                    <li><a href="#" class="ml-6 my-4 block">About v2- Minimal</a></li>
+                                    <li><a href="#" class="ml-6 my-4 block">FAQS</a></li>
+                                    <li><a href="#" class="ml-6 my-4 block">404</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center">
+                                Blog
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                             <div class="blogWrapper relative">
+                                <div class="shopSubNav absolute left-0 top-8">
+                                    <h5 class="ml-4 mb-4">BLOG PAGE</h5>
+                                    <ul>
+                                        <li><a href="#" class="ml-4 mb-1 block">Blog Layout v1</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">Blog Layout v2</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">Blog Layout v3</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">Blog Layout v4</a></li>
+                                        <li><a href="#" class="ml-4 mb-1 block">Blog Layout v5</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="shopSubNav absolute left-48 top-8">
+                                    <h5 class="mb-4">BLOG SINGLE</h5>
+                                    <ul>
+                                        <li><a href="#" class="mb-1 block">Blog Single V1</a></li>
+                                        <li><a href="#" class="mb-1 block">Blog Single V2</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="h-60 w-2/3 absolute top-8 right-4 flex justify-between items-center">
+                                    <div class="h-56 w-60 text-center">
+                                        <div class="h-40 w-60" style="background-image: url(./images/blog-2.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                                        <p class="mt-2">3 easy ways to make a handmade candle at home</p>
+                                    </div>
+
+                                    <div class="h-56 w-60 text-center">
+                                        <div class="h-40 w-60" style="background-image: url(./images/blog4.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                                        <p class="mt-2">How to define your decor style & make moodboards</p>
+                                    </div>
+
+                                    <div class="h-56 w-60 text-center">
+                                        <div class="h-40 w-60" style="background-image: url(./images/blog1.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                                        <p class="mt-2">D.I.Y Crafts: Minimal leather wallet to try your hand at</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="flex items-center justify-center">
+                                Contact<span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                            <div class="sub-nav">
+                                <ul class="w-40 h-20">
+                                    <li><a href="#" class="ml-6 my-4 block">Contact v1</a></li>
+                                    <li><a href="#" class="ml-6 my-4 block">Contact v2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-------------- HERO SECTION -------------->
+        <header class="h-96 w-full md:h-80 md:w-full md:flex md:justify-between md:items-center md:bg-yellow-100 lg:h-96 relative">
+
+            <div class="w-full h-full grid place-items-center absolute md:w-12/12 md:h-80 overflow-hidden relative">
+
+                <div class=" border grid place-items-center absolute w-full h-60 md:w-full md:h-80 slide">
+                    <img class="object-cover md:h-80 md:w-full lg:w-1/2" src="./images/img8.jpg">
+                </div>
+
+                <div class=" border grid place-items-center  absolute w-full h-60 md:w-full md:h-80 slide">
+                    <img class="object-cover md:h-80 md:w-full lg:w-1/2" src="./images/img4.jpg">
+                </div>
+
+                <div class=" border grid place-items-center  absolute w-full h-60 md:w-full md:h-80 slide">
+                    <img class="object-cover md:h-80 md:w-full lg:w-1/2" src="./images/img11.jpg">
+                </div>
+
+                <div class=" border grid place-items-center  absolute w-full h-60 md:w-full md:h-80 slide">
+                    <img class="object-cover md:h-80 md:w-full lg:w-1/2" src="./images/img10.jpg">
+                </div>
+
+
+            </div>
+
+            <button class="h-10 w-10 border rounded-full bg-yellow-100 absolute left-28 bottom-0 md:left-80 md:bottom-0 prevBtn">
+                <span class="material-symbols-outlined">keyboard_arrow_left</span>
+            </button>
+
+            <button class="h-10 w-10 border rounded-full bg-yellow-100 absolute right-28 bottom-0 md:right-80 md:bottom-0 nextBtn">
+                <span class="material-symbols-outlined">keyboard_arrow_right<span>
+            </button>
+            
+        </header>
+
+        <!-- ===================== MAIN SECTION ==================== -->
+        <main class="w-screen my-8 md:my-12 grid place-items-center">
+            <div class="h-10/12 w-11/12 grid place-items-center md:flex md:justify-between md:items-center  md:w-12/12">
+
+                <div class="goods border ">
+                    <a href="" class="block">
+                        <div class="h-60 w-60 border md:h-80 md:w-56 lg:h-80 lg:w-80">
+                            <div class="img h-64 w-60 md:h-80 md:w-56 lg:h-80 lg:w-80"></div>
+                        </div>
+                        
+                        <div class=" w-full text-center">
+                            <p class="txt my-4 text-base font-poppins font-semibold">Home Arts</p>
+                            <p class="text-xs font-light">24 Items</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goods border my-8 md:my-0 ">
+                    <a href="" class="block">
+                        <div class="h-60 w-60 border md:h-80 md:w-56 lg:h-80 lg:w-80">
+                            <div class="img h-64 w-60 md:h-80 md:w-56 lg:h-80 lg:w-80"></div>
+                        </div>
+                        
+                        <div class=" w-full text-center">
+                            <p class="txt my-4 text-base font-poppins font-semibold">Home Arts</p>
+                            <p class="text-xs font-light">24 Items</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="goods border ">
+                    <a href="" class="block">
+                        <div class="h-60 w-60 border md:h-80 md:w-56 lg:h-80 lg:w-80">
+                            <div class="img h-64 w-60 md:h-80 md:w-56 lg:h-80 lg:w-80"></div>
+                        </div>
+                        
+                        <div class=" w-full text-center">
+                            <p class="txt my-4 text-base font-poppins font-semibold">Home Arts</p>
+                            <p class="text-xs font-light">24 Items</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main> 
+        
+        <!-- ================== NEW ARRIVALS============= -->
+        <div>
+            <div class="w-full">
+                <div class="w-full h-10 text-center text-xl">
+                    <p>New Arrivals</p>
+                </div>
+
+                <div class="w-screen h-full flex justify-center items-center">
+
+                    <div class=" w-11/12 h-full place-items-center grid grid-cols-2 grid-rows-3 md:w-full  md:grid md:grid-cols-3 md:grid-rows-2 gap-4 ">
+                        
+                        <!-- Item 1 -->
+                        <div class="wrapper h-72 w-36 md:h-80 md:w-60 lg:h-80 lg:w-60 border">
+                            <div class="changeImg  h-4/5 w-2/2 md:h-4/5 md:w-full lg:h-4/5 lg:w-full border relative">
+                                <div class="imgTxt h-6 w-full md:h-10 md:w-full  lg:h-10 lg:w-full hidden bg-blue-700 flex justify-center items-center text-white absolute bottom-0 ">
+                                    <p class="w-full h-6 text-center text-xs md:text-sm">Buy this product</p>
+                                </div>
+
+                                <div class="imgIcon h-40 border-solid w-40 broder absolute top-8 right-0">
+
+                                    <div class="iconWrap w-40 h-8 relative">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs hidden md:block">Add to wishlist</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">favorite</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-4 hidden md:block">Quick views</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 md:w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-6 hidden md:block">Compare</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">compare_arrows</span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <p class="text-center my-1 md:my-2 text-xs md:text-sm">Wall Hook</p>
+                            <P class="text-center text-xs md:text-sm">$65.00</P>
+                        </div>
+
+                        <!-----2nd Item------->
+                        <div class="wrapper h-72 w-36 md:h-80 md:w-60 lg:h-80 lg:w-60 border">
+                            <div class="changeImg  h-4/5 w-2/2 md:h-4/5 md:w-full lg:h-4/5 lg:w-full border relative">
+                                <div class="imgTxt h-6 w-full md:h-10 md:w-full  lg:h-10 lg:w-full hidden bg-blue-700 flex justify-center items-center text-white absolute bottom-0 ">
+                                    <p class="w-full h-6 text-center text-xs md:text-sm">Buy this product</p>
+                                </div>
+
+                                <div class="imgIcon h-40 border-solid w-40 broder absolute top-8 right-0">
+
+                                    <div class="iconWrap w-40 h-8 relative">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs hidden md:block">Add to wishlist</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">favorite</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-4 hidden md:block">Quick views</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 md:w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-6 hidden md:block">Compare</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">compare_arrows</span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <p class="text-center my-1 md:my-2 text-xs md:text-sm">Wall Hook</p>
+                            <P class="text-center text-xs md:text-sm">$65.00</P>
+                        </div>
+
+                        <!-------3rd Item---------->
+                        <div class="wrapper h-72 w-36 md:h-80 md:w-60 lg:h-80 lg:w-60 border">
+                            <div class="changeImg  h-4/5 w-2/2 md:h-4/5 md:w-full lg:h-4/5 lg:w-full border relative">
+                                <div class="imgTxt h-6 w-full md:h-10 md:w-full  lg:h-10 lg:w-full hidden bg-blue-700 flex justify-center items-center text-white absolute bottom-0 ">
+                                    <p class="w-full h-6 text-center text-xs md:text-sm">Buy this product</p>
+                                </div>
+
+                                <div class="imgIcon h-40 border-solid w-40 broder absolute top-8 right-0">
+
+                                    <div class="iconWrap w-40 h-8 relative">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs hidden md:block">Add to wishlist</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">favorite</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-4 hidden md:block">Quick views</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 md:w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-6 hidden md:block">Compare</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">compare_arrows</span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <p class="text-center my-1 md:my-2 text-xs md:text-sm">Wall Hook</p>
+                            <P class="text-center text-xs md:text-sm">$65.00</P>
+                        </div>
+
+                        <!--------4th Item-------->
+                        <div class="wrapper h-72 w-36 md:h-80 md:w-60 lg:h-80 lg:w-60 border">
+                            <div class="changeImg  h-4/5 w-2/2 md:h-4/5 md:w-full lg:h-4/5 lg:w-full border relative">
+                                <div class="imgTxt h-6 w-full md:h-10 md:w-full  lg:h-10 lg:w-full hidden bg-blue-700 flex justify-center items-center text-white absolute bottom-0 ">
+                                    <p class="w-full h-6 text-center text-xs md:text-sm">Buy this product</p>
+                                </div>
+
+                                <div class="imgIcon h-40 border-solid w-40 broder absolute top-8 right-0">
+
+                                    <div class="iconWrap w-40 h-8 relative">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs hidden md:block">Add to wishlist</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">favorite</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-4 hidden md:block">Quick views</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 md:w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-6 hidden md:block">Compare</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">compare_arrows</span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <p class="text-center my-1 md:my-2 text-xs md:text-sm">Wall Hook</p>
+                            <P class="text-center text-xs md:text-sm">$65.00</P>
+                        </div>
+
+                        <!----------5th Item---------->
+                        <div class="wrapper h-72 w-36 md:h-80 md:w-60 lg:h-80 lg:w-60 border">
+                            <div class="changeImg  h-4/5 w-2/2 md:h-4/5 md:w-full lg:h-4/5 lg:w-full border relative">
+                                <div class="imgTxt h-6 w-full md:h-10 md:w-full  lg:h-10 lg:w-full hidden bg-blue-700 flex justify-center items-center text-white absolute bottom-0 ">
+                                    <p class="w-full h-6 text-center text-xs md:text-sm">Buy this product</p>
+                                </div>
+
+                                <div class="imgIcon h-40 border-solid w-40 broder absolute top-8 right-0">
+
+                                    <div class="iconWrap w-40 h-8 relative">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs hidden md:block">Add to wishlist</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">favorite</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-4 hidden md:block">Quick views</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 md:w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-6 hidden md:block">Compare</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">compare_arrows</span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <p class="text-center my-1 md:my-2 text-xs md:text-sm">Wall Hook</p>
+                            <P class="text-center text-xs md:text-sm">$65.00</P>
+                        </div>
+
+                        <!-----------6th Item-------->
+                        <div class="wrapper h-72 w-36 md:h-80 md:w-60 lg:h-80 lg:w-60 border">
+                            <div class="changeImg  h-4/5 w-2/2 md:h-4/5 md:w-full lg:h-4/5 lg:w-full border relative">
+                                <div class="imgTxt h-6 w-full md:h-10 md:w-full  lg:h-10 lg:w-full hidden bg-blue-700 flex justify-center items-center text-white absolute bottom-0 ">
+                                    <p class="w-full h-6 text-center text-xs md:text-sm">Buy this product</p>
+                                </div>
+
+                                <div class="imgIcon h-40 border-solid w-40 broder absolute top-8 right-0">
+
+                                    <div class="iconWrap w-40 h-8 relative">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs hidden md:block">Add to wishlist</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">favorite</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-4 hidden md:block">Quick views</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iconWrap w-40 md:w-40 h-8 relative ">
+                                        <div class="iconTxt bg-blue-700 text-white w-0/5 md:w-3/5 absolute top-2 left-4 hidden">
+                                            <p class="text-xs ml-6 hidden md:block">Compare</p>
+                                        </div>
+                                        <div class="icon h-8 w-8 border grid place-items-center rounded-full bg-white absolute top-0 right-0">
+                                            <span class="material-symbols-outlined">compare_arrows</span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <p class="text-center my-1 md:my-2 text-xs md:text-sm">Wall Hook</p>
+                            <P class="text-center text-xs md:text-sm">$65.00</P>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

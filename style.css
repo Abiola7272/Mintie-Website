@@ -1,0 +1,136 @@
+.sidebar{
+    background-color: rgba(24, 23, 23, 0.548);
+    position: fixed;
+    transform: translate(-100%);
+    transition: .7s all;
+}
+
+.showSidebar{
+    transform: translate(0);
+}
+
+.subNavWrap{
+    display: none;
+    /* height: 70vh; */
+}
+
+.show{
+    display: block;
+}
+
+.hideBtn{
+    opacity: 0;
+}
+
+.goods{
+    transition: all .5s ease ;
+}
+
+.goods:hover .img{
+    transform: translate(-10px, -20px);
+    color: red;
+}
+
+.goods:hover .txt{
+    color: red;
+}
+
+.img{
+    background-image: url(images/img1.jpg);
+    background-repeat: no-repeat;
+}
+
+.changeImg{
+    background-image: url(images/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    transition: all .6s ease-in-out;
+}
+
+.changeImg:hover {
+    background-image: url(images/img3.jpg);
+    object-fit: contain;
+}
+
+.wrapper:hover .imgTxt {
+    display: block;
+    transition: all .5s ease;
+    text-align: center;
+    width: 100%;
+    /* transition: all .1s ease-in-out; */
+}
+
+.imgTxt:hover{
+    background-color: brown;
+    text-align: center;
+    width: 100%;
+    /* transition: all .1s ease-in-out; */
+}
+
+.imgIcon{
+    display: none;
+}
+
+.wrapper:hover .imgIcon{
+    display: grid;
+    /* transition: all .1s ease-in-out; */
+}
+
+.iconWrap:hover .iconTxt{
+    display: block;
+}
+
+.iconWrap:hover .icon{
+    background-color: brown;
+    color: white;
+    transition: all .4s ease-in-out;
+    border: none;
+}
+
+.sub-nav{
+    display: none;
+}
+
+.subNavWrapper ul li:hover .sub-nav{
+    display: block;
+    position: absolute;
+    background-color: rgb(247, 244, 234);
+    margin-top: 5px;
+    margin-left: -45px;
+    color: black;
+    z-index: 999;
+    transition: 3s ease-in-out;
+}
+
+.navwrapper{
+    display: none;
+    width: 26vw;
+    height: 50vh;
+    position: absolute;
+    background-color: rgb(247, 244, 234);
+    margin-top: 5px;
+    margin-left: -15px;
+    color: black;
+    z-index: 999;
+}
+
+.subNavWrapper ul li:hover .navwrapper{
+    display: block;
+}
+
+.blogWrapper{
+    display: none;
+    width: 90vw;
+    height: 55vh;
+    position: absolute;
+    background-color: rgb(247, 244, 234);
+    margin-top: 2px;
+    margin-left: -48em;
+    color: black;
+    z-index: 999;
+}
+
+.subNavWrapper ul li:hover .blogWrapper{
+    display: block;
+}
